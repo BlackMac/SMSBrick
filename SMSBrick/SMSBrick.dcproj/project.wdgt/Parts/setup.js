@@ -7,6 +7,7 @@
 var dashcodePartSpecs = {
     "balance_info": { "creationFunction": "CreateText" },
     "button": { "creationFunction": "CreateButton", "leftImageWidth": 12, "onclick": "clickSend", "rightImageWidth": 12, "text": "Senden" },
+    "copyright_text": { "creationFunction": "CreateText", "text": "© 2009 Stefan Lange-Hegermann" },
     "count_info": { "creationFunction": "CreateText" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Fertig" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "black", "frontID": "front", "onclick": "showBack" },
@@ -16,6 +17,6 @@ var dashcodePartSpecs = {
     "sender_label": { "creationFunction": "CreateText", "text": "Absender:" },
     "site_info": { "creationFunction": "CreateText" },
     "success_indicator": { "creationFunction": "CreateText", "text": "Versand erfolgreich!" },
-    "text": { "creationFunction": "CreateText", "text": "© 2009 Stefan Lange-Hegermann" },
-    "username_label": { "creationFunction": "CreateText", "text": "Username:" }
+    "username_label": { "creationFunction": "CreateText", "text": "Username:" },
+    "username_label1": { "creationFunction": "CreateText", "text": "sipgate credentials:" }
 };

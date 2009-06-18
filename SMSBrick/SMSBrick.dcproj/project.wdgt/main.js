@@ -456,3 +456,9 @@ function contactsClick(event)
 {
     console.log(JSON.encode(contacts));
 }
+
+
+function openHomepage(event)
+{
+    widget.openURL('http://www.sourcebricks.com/page/smsbrick.html');
+}

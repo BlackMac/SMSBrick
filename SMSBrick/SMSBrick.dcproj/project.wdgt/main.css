@@ -74,7 +74,7 @@ body {
     font-size: 10pt;
     left: 94px;
     width: 159px;
-    top: 36px;
+    top: 49px;
 }
 
 #password_field {
@@ -84,7 +84,7 @@ body {
     font-size: 10pt;
     left: 94px;
     width: 159px;
-    top: 67px;
+    top: 78px;
 }
 
 #price_info {
@@ -198,22 +198,22 @@ body {
     bottom: auto;
     margin-top: 0px;
     width: 107px;
-    left: 20px;
-    top: 178px;
+    top: 165px;
+    left: 17px;
 }
 
 #text2 {
     position: absolute;
-    left: 18px;
     text-align: left;
     vertical-align: middle;
     color: rgb(255, 255, 255);
     font-size: 10pt;
-    top: 1px;
-    right: 3px;
     width: auto;
-    bottom: 2px;
     height: auto;
+    right: 3px;
+    bottom: 2px;
+    top: 1px;
+    left: 18px;
 }
 
 #sender_label {
@@ -226,7 +226,7 @@ body {
     color: rgb(255, 255, 255);
     left: 20px;
     opacity: 0;
-    top: 104px;
+    top: 112px;
     width: auto;
     height: auto;
 }
@@ -239,7 +239,7 @@ body {
     width: 159px;
     left: 94px;
     opacity: 0;
-    top: 99px;
+    top: 107px;
 }
 
 #sender_info {
@@ -253,10 +253,10 @@ body {
     color: rgb(255, 141, 138);
     font-size: 7pt;
     opacity: 0;
-    top: 130px;
+    top: 138px;
     right: 21px;
     width: auto;
-    bottom: 58px;
+    bottom: 55px;
     height: auto;
 }
 
@@ -301,7 +301,7 @@ body {
     margin-top: 0px;
     color: rgb(255, 255, 255);
     left: 20px;
-    top: 42px;
+    top: 55px;
     width: auto;
     height: auto;
 }
@@ -315,25 +315,8 @@ body {
     margin-top: 0px;
     color: rgb(255, 255, 255);
     left: 20px;
-    top: 73px;
+    top: 84px;
     width: auto;
-    height: auto;
-}
-
-#text {
-    font-family: HelveticaNeue;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    left: 66px;
-    text-align: right;
-    color: rgb(255, 255, 255);
-    font-size: 7pt;
-    top: 19px;
-    right: 21px;
-    width: auto;
-    bottom: 186px;
     height: auto;
 }
 
@@ -363,4 +346,40 @@ body {
     bottom: 50px;
     margin-top: auto;
     text-align: left;
+}
+
+#username_label1 {
+    font-family: HelveticaNeue;
+    font-size: 10pt;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    left: 125px;
+    top: 25px;
+    width: auto;
+    height: auto;
+}
+
+#copyright_text {
+    cursor: pointer;
+}
+
+#copyright_text {
+    font-family: HelveticaNeue;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 7pt;
+    cursor: pointer;
+    top: 188px;
+    left: 20px;
+    right: 120px;
+    width: auto;
+    bottom: 21px;
+    height: auto;
 }

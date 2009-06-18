@@ -17,6 +17,7 @@ var localizedStrings = {
     "login failed": "Login fehlgeschlagen",
     "Password:": "Passwort:",
     "Price": "Preis",
-    "SMS sender help": "Make sure this number was validated on the sipgate website before. If left empty the sender will be \"sipgate\".",
+    "sipgate credentials:": "sipgate Zugangsdaten:",
+    "SMS sender help": "Stellen Sie sicher, dass diese Nummer auf der sipgate Seite validiert wurde!",
     "Username:": "Username:"
 };
