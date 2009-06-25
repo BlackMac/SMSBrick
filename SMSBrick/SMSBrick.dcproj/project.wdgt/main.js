@@ -450,6 +450,7 @@ function clickSend(event)
     if ($('button').disabled) return;
     if (sendSMS($('sms_recipients').value, $('sms_text').value)) {
         $('sms_text').value="";
+        updateData();
         userMessage(__('message sent'), 'success');
     } else {
         userMessage(__('sending failed'), 'failure');
