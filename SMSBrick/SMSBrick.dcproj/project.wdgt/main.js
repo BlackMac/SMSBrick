@@ -151,14 +151,15 @@ function initRpc()
     if (username && password) {
         if (sg_connection.login(username, password)) {
             userMessage(__('logged in'), 'success');
-            $('sms_text').set('disabled', false);
-            $('sms_recipients').set('disabled', false);
             if (server=='https://samurai.sipgate.net/RPC2') {
                 $('site_info').set('text','classic');
             } else {
                 $('site_info').set('text','team');
             }
             getBalance();
+            //$('sms_text').erase('disabled');
+            //$('sms_recipients').erase('disabled');
+            $('button').erase('disabled').set('opacity', 1);
             return;
         } else {
             userMessage(__('login failed'), 'failure');
@@ -168,8 +169,9 @@ function initRpc()
         userMessage(__('enter login data'), 'failure', 0);
     }
     $('site_info').set('text','offline');
-    $('sms_text').set('disabled', true);
-    $('sms_recipients').set('disabled', true);
+    $('button').set('disabled', true).set('opacity', 0.6);
+    //$('sms_text').set('disabled', true);
+    //$('sms_recipients').set('disabled', true);
 }
 
 function getBalance()
@@ -424,6 +426,7 @@ function updateData(event)
 
 function clickSend(event)
 {
+    if ($('button').disabled) return;
     if (sendSMS($('sms_recipients').value, $('sms_text').value)) {
         $('sms_text').value="";
         userMessage(__('message sent'), 'success');
