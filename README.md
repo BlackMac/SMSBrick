@@ -16,11 +16,13 @@ are currently supported.
 Version History
 ---------------
 
-1.2 added version check
+1.2 
+    added version check
     worked around a bug, where the textarea remained inactive
     update counter after sending SMS
 
-1.1 initial public release
+1.1 
+    initial public release
 
 License
 -------
