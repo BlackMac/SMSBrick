@@ -1,4 +1,4 @@
-SMSBrick 1.1
+SMSBrick 1.2
 ============
 
 SMSBrick allows sending SMS messages through sipgate and sipgate team edition.
@@ -13,6 +13,14 @@ Only the german versions:
 are currently supported.
 
 ![SMSBrick back](http://www.blackmac.de/uploads/screenshot_back.png)
+Version History
+---------------
+
+1.2 added version check
+    worked around a bug, where the textarea remained inactive
+    update counter after sending SMS
+
+1.1 initial public release
 
 License
 -------
