@@ -383,3 +383,20 @@ body {
     bottom: 21px;
     height: auto;
 }
+
+#new_version {
+    font-family: HelveticaNeue-Bold;
+    text-align: center;
+    position: absolute;
+    right: auto;
+    margin-top: 0px;
+    width: 113px;
+    left: 83px;
+    font-size: 9px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 1px 1px 0px;
+    bottom: 202px;
+    height: auto;
+    visibility: hidden;
+    top: 1px;
+}

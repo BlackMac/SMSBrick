@@ -11,6 +11,7 @@ var dashcodePartSpecs = {
     "count_info": { "creationFunction": "CreateText" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Fertig" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "black", "frontID": "front", "onclick": "showBack" },
+    "new_version": { "creationFunction": "CreateButton", "leftImageWidth": 9, "onclick": "newVersionGet", "rightImageWidth": 9, "text": "neue version: 1.2.1" },
     "password_label": { "creationFunction": "CreateText", "text": "Password:" },
     "price_info": { "creationFunction": "CreateText" },
     "sender_info": { "creationFunction": "CreateText", "text": "SMS sender help" },

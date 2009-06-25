@@ -25,6 +25,7 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
+var widget_version="1.2"
 var sg_connection; 
 var username=null;
 var password=null;
@@ -111,21 +112,41 @@ function load()
         }
     });
     
+    var unid=getPref('unid', true);
+    
+    if (!unid) {
+        console.log('setting unid');
+        unid=new Date().getTime();
+        setPref(unid, 'unid', true);
+    }
+    
+    new Request.JSON({
+        'url':'http://www.sourcebricks.com/assets/files/download/smsbrick_version.txt',
+        'method':'get',
+        'onSuccess':function(res) {
+            if (res!=widget_version) {
+                var nvobj=$('new_version'); 
+                $('new_version').children[0].children[1].innerHTML=__('neue version: ')+res;
+                $('new_version').setStyle('visibility', 'visible');
+            }
+        }
+    }).send('unid='+unid);
+    
     sg_connection=new Sipgate(server);
     initRpc();
 }
 
-function getPref(key)
+function getPref(key, global)
 {
     var id=widget.identifier+"-";
-    if (GLOBALPREFS) id="";
+    if (GLOBALPREFS || global) id="";
     return widget.preferenceForKey(id+key);
 }
 
-function setPref(value, key)
+function setPref(value, key, global)
 {
     var id=widget.identifier+"-";
-    if (GLOBALPREFS) id="";
+    if (GLOBALPREFS || global) id="";
     widget.setPreferenceForKey(value, id+key);
 }
 
@@ -462,6 +483,12 @@ function contactsClick(event)
 
 
 function openHomepage(event)
+{
+    widget.openURL('http://www.sourcebricks.com/page/smsbrick.html');
+}
+
+
+function newVersionGet(event)
 {
     widget.openURL('http://www.sourcebricks.com/page/smsbrick.html');
 }
